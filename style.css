@@ -1,0 +1,348 @@
+/*
+Theme Name: Grewai HP Minimal
+Author: OpenAI
+Description: Minimal, block-based WordPress theme for the AI training site.
+Version: 1.0
+*/
+
+:root {
+  color-scheme: light;
+  --text: #151b2b;
+  --muted: #5c667a;
+  --line: #e2e6ef;
+  --accent: #2e63d4;
+  --accent-dark: #244faa;
+  --card-white: #ffffff;
+  --card-blue: #eef3ff;
+  --card-beige: #f7f2ea;
+  --card-mint: #eef7f3;
+  --card-lavender: #f2effa;
+  --shadow: 0 14px 28px rgba(18, 25, 38, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  color: var(--text);
+  background: #fafbfe;
+  line-height: 1.75;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(1180px, 92vw);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.site-nav a:hover {
+  color: var(--text);
+}
+
+.hero {
+  padding: 70px 0 40px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 3vw, 3.2rem);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.hero .lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.hero .note {
+  color: var(--muted);
+  margin-bottom: 26px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.button {
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+
+.button.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.button.primary:hover {
+  background: var(--accent-dark);
+}
+
+.button.ghost {
+  border-color: var(--line);
+  color: var(--text);
+  background: #fff;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.section-card {
+  background: var(--card-white);
+  border-radius: 20px;
+  padding: 36px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+}
+
+.section-card.alt-blue {
+  background: var(--card-blue);
+}
+
+.section-card.alt-beige {
+  background: var(--card-beige);
+}
+
+.section-card.alt-mint {
+  background: var(--card-mint);
+}
+
+.section-card.alt-lavender {
+  background: var(--card-lavender);
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  margin: 0 0 18px;
+}
+
+.section p,
+.section li {
+  color: var(--muted);
+}
+
+.list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 18px rgba(18, 25, 38, 0.06);
+}
+
+.card h3 {
+  margin: 12px 0 8px;
+  font-size: 1.05rem;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: center;
+}
+
+.media-box {
+  border-radius: 16px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.training-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.training-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.training-card h4 {
+  margin: 0 0 6px;
+}
+
+.link {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.cta {
+  text-align: center;
+}
+
+.cta p {
+  margin: 0 0 24px;
+}
+
+.site-footer {
+  background: #0f1626;
+  color: #e8ecf5;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  padding: 32px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.footer-inner h4 {
+  margin: 0 0 12px;
+}
+
+.footer-inner ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-inner a {
+  color: #e8ecf5;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.footer-inner a:hover {
+  opacity: 1;
+}
+
+.page-hero {
+  padding: 48px 0 24px;
+}
+
+.page-hero h1 {
+  margin: 0 0 12px;
+}
+
+.accordion {
+  display: grid;
+  gap: 12px;
+}
+
+.accordion-item {
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  padding: 16px;
+}
+
+.accordion-item summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.profile .avatar {
+  border-radius: 16px;
+  background: var(--card-blue);
+  padding: 16px;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .hero-grid,
+  .split,
+  .training-columns,
+  .profile {
+    grid-template-columns: 1fr;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
